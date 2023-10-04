@@ -4,7 +4,7 @@
 // -------------------------
 
 // Please enter your spreadsheet URL here
-const SHEET_URL = 'YOUR_SPREADSHEET_URL_HERE';
+const SHEET_URL = 'https://docs.google.com/spreadsheets/d/17zf0npMhykoW0-p2BEldWp-9lOzTy7RHUaqKOuuEawI/edit#gid=1320015883';
 
 // Set to false if you want search categories for ALL campaigns, not just PERFORMANCE_MAX
 let pmaxOnly = true; 
@@ -20,7 +20,7 @@ let useNameForTabs = false;
 
 
 let ss = SpreadsheetApp.openByUrl(SHEET_URL);
-ss.rename('Mike Rhodes - Search Category Insights');
+ss.rename('Sygnia PMax - Search Category Insights');
 
 function removeUnneededTabs(campaignData) {
     let allSheets = ss.getSheets();
